@@ -1,0 +1,13 @@
+[package]
+name = "axum-upload-local-and-cloud"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.59"
+axum = { version = "0.5.17", features = ["multipart"] }
+futures = "0.3.25"
+tokio = { version = "1.21.2", features = ["full"] }
+tokio-util = { version = "0.7.4", features = ["io", "compat"] }
+reqwest = { version = "0.11.13", features = ["stream"] }
+rusty-s3 = "0.3.2"
